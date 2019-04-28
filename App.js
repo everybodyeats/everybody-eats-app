@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import { Text, TextInput, Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
 
@@ -39,6 +39,11 @@ export default class App extends React.Component {
         // We include SpaceMono because we use it in HomeScreen.js. Feel free
         // to remove this if you are not using it in your app
         'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+        'nunito-bold': require('./assets/fonts/Nunito-Bold.ttf'),
+        'nunito-regular': require('./assets/fonts/Nunito-Regular.ttf'),
+        'nunito-semibold': require('./assets/fonts/Nunito-SemiBold.ttf'),
+        'open-sans-semibold': require('./assets/fonts/OpenSans-SemiBold.ttf'),
+        'open-sans-light': require('./assets/fonts/OpenSans-Light.ttf'),
       }),
     ]);
   };
